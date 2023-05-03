@@ -311,8 +311,12 @@ jobs:
                 Finalmente, incluimos las urls de nuestra app en las del proyecto: <br></br> <br></br>
 
                 <font color='green'>drf_project/urls.py</font> <br></br>
-                <CodeBlock codestring={urlinicial}/>
-
+                
+                
+                
+                <div class="col-md-6"><CodeBlock codestring={urlinicial}/></div>
+                
+                
 
                 Levantamos el servidor y testeamos: <br></br> <br></br>
 
@@ -443,13 +447,6 @@ jobs:
                         git push -u origin master <br></br> <br></br> <br></br>
 
                        
-
-
-
-
-                       
-
-
                         <a id="ci"><b><font color='#086A87'><h4>8. CI</h4></font></b></a><br></br>
 
 

@@ -24,7 +24,12 @@ import CourseDetail from "./components/Course/CourseDetail";
 import Footer from "./components/Footer";
 
 
+
+
+import Tutorials from "./Pages/Tutorials/Tutorials";
 import Tutorial_Django_TDD_CI from "./Pages/Tutorials/django_tdd_ci";
+import Deploy_ML_model from "./Pages/Tutorials/deploy_ml_model";
+
 
 
 function App() {
@@ -42,7 +47,11 @@ function App() {
         <Route path="/cv" element={<CV />} />
         <Route path="/articles" element={<Articles />} />
 
-        <Route path="/tutorials" element={<Tutorial_Django_TDD_CI />} />
+        
+
+        <Route path="/tutorials" element={<Tutorials/>} />
+        <Route path="tutorials/DjangoCI" element={<Tutorial_Django_TDD_CI />} />
+        <Route path="tutorials/DeployMLFastAPI" element={<Deploy_ML_model />} />
 
 
       </Routes>
