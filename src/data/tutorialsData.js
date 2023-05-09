@@ -2,7 +2,7 @@ const data = [
     {
         'id':1,
         'name':'CI con Django',
-        'tags':['Django','CI'],
+        'tags':['Django','CI','API REST'],
         'link':'DjangoCI'
     },
     {

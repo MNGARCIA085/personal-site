@@ -37,21 +37,14 @@ const Tutorials = () => {
 
 
     function tags(tags){
-            tags.map( (result) => {
-                console.log(result);
-                return (
-                    <div>
-                         <h1>{result}fdgfdgfd</h1>
-                    </div>
-                )
-            })
+            
             return (
             
                 tags.map( (result) => {
                     return (
-                        <div>
-                        <h3>{result}</h3>
-                    </div>
+                        <div class="container">
+                            <button type="button" class="btn btn-sm btn-info">{result}</button>  
+                        </div>
                     )
                     
                 })
