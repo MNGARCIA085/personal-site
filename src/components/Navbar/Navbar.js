@@ -53,15 +53,17 @@ const Navbar = () => {
               Certifications
             </NavLink>
 
-
-            <NavLink to="/articles" className="nav-link">
-              Articles
-            </NavLink>
-
-
             <NavLink to="/tutorials" className="nav-link">
               Tutorials
             </NavLink>
+
+
+            <NavLink to="/projects" className="nav-link">
+              Projects
+            </NavLink>
+
+
+            
 
 
           </div>

@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
-import SearchBar from '../../components/SearchBar';
-import data from '../../data/tutorialsData';
+import data from '../../data/projectsData';
 
 
 
-
-
-const Tutorials = () => {
+const Projects = () => {
 
     const results = data;
 
@@ -29,39 +26,19 @@ const Tutorials = () => {
 
 
 
-    function tags(tags){
-            
-            return (
-            
-                tags.map( (result) => {
-                    return (
-                        <div class="container">
-                            <button type="button" class="btn btn-sm btn-info">{result}</button>  
-                        </div>
-                    )
-                    
-                })
-            )
-    }
-
-    
-    
-
-
-
     const renderedDisplay = display.map((result) => {
         return (   
                 <div class="card" key={result.name}>
                         <div class="content">
                             <div class="header"><center>{result.name}</center><hr></hr></div>
+
+                            {result.description}
                             
-
-                            
-                            {tags(result.tags)}
-
-
-
                             <hr></hr>
+
+
+                            
+
                             <center>
                                 <i class="add icon"  style={{color:'grey'}}></i>
                                 <Link
@@ -79,14 +56,14 @@ const Tutorials = () => {
 
 
 
-    //  <SearchBar/> debajo del return
+
 
     return (
         <div>
             
             <div class="row">
                 <div class="col-md-12">
-                    <b><center><h2><font color='red'>TUTORIALS</font></h2></center></b>
+                    <b><center><h2><font color='red'>PROJECTS</font></h2></center></b>
                     <hr></hr>
                 </div>
             </div>
@@ -118,7 +95,7 @@ const Tutorials = () => {
   );
 };
 
-export default Tutorials;
+export default Projects;
 
 
 

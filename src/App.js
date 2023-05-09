@@ -31,6 +31,9 @@ import Tutorial_Django_TDD_CI from "./Pages/Tutorials/django_tdd_ci";
 import Deploy_ML_model from "./Pages/Tutorials/deploy_ml_model";
 
 
+import Projects from "./Pages/Projects/Projects";
+import IBM_data_science from "./Pages/Projects/ibm_data_science";
+
 
 function App() {
 
@@ -52,6 +55,11 @@ function App() {
         <Route path="/tutorials" element={<Tutorials/>} />
         <Route path="tutorials/DjangoCI" element={<Tutorial_Django_TDD_CI />} />
         <Route path="tutorials/DeployMLFastAPI" element={<Deploy_ML_model />} />
+
+
+
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="projects/IBMDataScience" element={<IBM_data_science />} />
 
 
       </Routes>
