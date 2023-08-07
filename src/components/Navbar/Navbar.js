@@ -45,10 +45,6 @@ const Navbar = () => {
               Home
             </NavLink>
             
-            <NavLink to="/cv" className="nav-link">
-              CV
-            </NavLink>
-
             <NavLink to="/courses" className="nav-link">
               Certifications
             </NavLink>
@@ -57,14 +53,9 @@ const Navbar = () => {
               Tutorials
             </NavLink>
 
-
             <NavLink to="/projects" className="nav-link">
               Projects
             </NavLink>
-
-
-            
-
 
           </div>
         </div>

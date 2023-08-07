@@ -6,6 +6,12 @@ const data = [
         'name':'Angular: de 0 a experto',
         'certificate':'https://www.udemy.com/certificate/UC-d22bbf60-1b18-41d0-b45b-a06c05d96e19/',
         'tuthor':'Fernando Herrera',
+        'razon':'Quería aprender uno de los frameworks de frontend más utilizados',
+        'aprendi':'Crear aplicaciones en angular, pipes, formularios, servicios, rutas protegidas\
+                        deployment, practicarme con la inyección de dependencias.',
+        'type':'Course',
+        'category':'Software Development',
+
     },
     {
         'id':2,
@@ -14,6 +20,10 @@ const data = [
         'name':'Modern react with redux',
         'certificate':'https://www.udemy.com/certificate/UC-6a3c9ac1-bf87-4a38-b116-22386044560e/',
         'tuthor':'Stephen Grider',
+        'razon':'Habiendo aprendido Angular, quería aprender React para poder compararlos',
+        'aprendi':'Cómo funciona react, escribir componentes reutilizables, rutas, hooks, Redux.',
+        'type':'Course',
+        'category':'Software Development',
     },
     {
         'id':3,
@@ -22,6 +32,10 @@ const data = [
         'name':'SOLID Principles',
         'certificate':'https://www.udemy.com/certificate/UC-b21f0137-fa02-4f4b-b850-f2b45a5c32cc/',
         'tuthor':'Sujith George',
+        'razon':'Mejorar la calidad de mis desarrollos',
+        'aprendi':'Los principios SOLID, de qué se tratan y me ayudó a investigar cuándo y cómo aplicarlos',
+        'type':'Course',
+        'category':'Software Development',
     },
     
     {
@@ -31,6 +45,11 @@ const data = [
         'name':'Google Project Management', 
         'certificate':'https://coursera.org/share/fe9739bebe353b6e0df6d63f5da5a141',
         'tuthor':'Google',
+        'razon':'Tener una visión global del desarrollo de proyectos, mejorar mis conocimientos de \
+                        de metodologías ágiles',
+        'aprendi':'Cómo gestionar eficientemente un proyecto, mejorar mis habilidades blandas ',
+        type:'Specialization',
+        'category':'Software Development',
     },
     {
         'id':5,
@@ -39,6 +58,13 @@ const data = [
         'name':'Complete NodeJS Developer',
         'certificate':'https://www.udemy.com/certificate/UC-ab846ff1-6080-465a-a8ae-1658995f37d9/',
         'tuthor':'From 0 to Mastery',
+        'razon':'Aprender Node, uno de los frameworks de frontend más populares y GraphQL.',
+        'aprendi':'Node, GRaphQL, patrones de diseño, como repositoy y observer. \
+                En particular trabajo con MVC hace mucho pero con frameworks de Python.\
+                Cambiar de lenguaje me fue sencillo, lo que me alegró en el sentido de que\
+                aprendí como se debe. ',
+        'type':'Course',
+        'category':'Software development',
     },
     
     {
@@ -48,6 +74,9 @@ const data = [
         'name':'IBM Full Stack Cloud Developer',
         'certificate':'https://coursera.org/share/d0a65d3be23a4e091a7ec8fb33bae951',
         'tuthor':'IBM',
+        'razon':'Aprender a trabajar en desarrollo de software en un proveedor de nube',
+        'aprendi':'Desarrollar aplicaciones y hacer un deploy en la nube, Docker, Kubernetes\
+                    Microservicios y Serverless',
     },
     {
         'id':7,
@@ -56,6 +85,10 @@ const data = [
         'name':'IBM AI Engineering',
         'certificate':'https://coursera.org/share/f8919915a860021569a6e5db275fcb8b',
         'tuthor':'IBM',
+        'razon':'Aprender las bases de IA',
+        'aprendi':'Distintos modelos de IA, cómo usar Keras, TensorFLow y PyTorch',
+        'type':'Specialization',
+        'category':'Machine Learning',
     },
     {
         'id':8,
@@ -64,6 +97,11 @@ const data = [
         'name':'IBM Data Science',
         'certificate':'https://coursera.org/share/d74710e529a045ef2f6ba55c4e05f70d',
         'tuthor':'IBM',
+        'razon':'Aprender sobre data science',
+        'aprendi':'Armar un informe, metodología, análisis y visualización de datos, diferentes\
+                    modelos de machine learning',
+        'type':'Specialization',
+        'category':'Machine Learning',
     },
     {
         'id':9,
@@ -72,6 +110,10 @@ const data = [
         'name':'Deep Learning AI',
         'certificate':'https://coursera.org/share/d74710e529a045ef2f6ba55c4e05f70d',
         'tuthor':'Deep Learning AI (Andrew Ng)',
+        'razon':'Aprender Deep Learning',
+        'aprendi':'Qué es el deep learning, qué es una red neuronal, cómo se entrenan\
+        ,cómo se ajustan los hiperpárametros, cuál es la estructura de un proyecto\
+        CNNs y modelos de lenguaje',
     },
     {
         'id':10,
@@ -80,6 +122,10 @@ const data = [
         'name':'Version Control with GIT',
         'certificate':'https://coursera.org/share/d0f8582e9f4cac592e5b46ca73edd1de',
         'tuthor':'Atlassian',
+        'razon':'Aprender más sobre el control de versiones',
+        'aprendi':'Branching and merging, workflows',
+        'type':'Course',
+        'category':'Software Development',
     },
     {
         'id':11,
@@ -88,6 +134,11 @@ const data = [
         'name':'SQL and PostgreSQL: The complete developers guide',
         'certificate':'https://www.udemy.com/certificate/UC-00f5a066-fb89-4386-8b1b-7205fc464ac2/',
         'tuthor':'Stephen Grider',
+        'razon':'Mejorar mis conocimientos de SQL',
+        'aprendi':'Pude repasar múltiples conceptos de SQL y aprender algunos nuevos, por ejemplo\
+                cómo funcion internamente los índices',
+        'type':'Course',
+        'category':'Software Development',
     },
     {
         'id':12,
@@ -96,6 +147,11 @@ const data = [
         'name':'Generativa Adversarial Networks (GANs)',
         'certificate':'https://www.coursera.org/account/accomplishments/specialization/7H27NYS9RXXD',
         'tuthor':'Deep Learning AI (Sharon Zou)',
+        'razon':'Aprender sobre las redes GAN dado que consiguen resultados fantásticos',
+        'aprendi':'Entender las GAN, cómo funcionan, cómo se entrenan, diversdidad y fidelidad, \
+                    sesgo de máquina y su importancia',
+        'type':'Specialization',
+        'category':'Machine Learning',
     }
     
 ]
