@@ -15,6 +15,7 @@ import IBM_data_science from "./Pages/Projects/ibm_data_science";
 import MLBeginner from "./Pages/Projects/ML_Beginner";
 import Movies from "./Pages/Projects/Movies";
 
+import AboutMe from "./Pages/AboutMe";
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
         <Route path="projects/IBMDataScience" element={<IBM_data_science />} />
         <Route path="projects/MLBeginner" element={<MLBeginner />} />
         <Route path="projects/Movies" element={<Movies />} />
+
+        <Route path="/about" element={<AboutMe />} />
 
       </Routes>
       <Footer/>
@@ -67,15 +70,32 @@ const Home = () => {
       <br></br>
       <br></br>
       <div style={{ textAlign: 'justify' }}>
-          Hola! Me llamo Marcos. <br></br>
-          Soy un Ingeniero Eléctrico de Carmelo, Uruguay. <br></br>
-          Me dedico principalmente al desarrollo de software, trabajando más que nada en la parte del backend con distintos 
-          frameworks de Python (Fast API, Django, Web2py), bases de datos SQL y noSQL y cada tanto algo de frontend (React
-          o Angular).
-          Actualmente le estoy dedicando mucho a tiempo a aprender IA, pues con ella es posible lograr cosas
-          fascinantes.<br></br> 
-          En esta página puede encontrar las especializaciones que he realizado junto con mi opinión sobre
-          las mismas, algunos tutoriales y algunos de los proyectos en los que he trabajado.
+          Hi! My name is Marcos <br></br><br/>
+          
+          As an electrical engineer with over 10 years of experience, I have turned my fascination with technology 
+          into an exciting career in software development. 
+          My primary focus revolves around designing and developing robust and efficient web applications.
+          <br/><br/>
+
+          I have worked with widely recognized Python frameworks, including Django, Web2py, and FastAPI, as well 
+          as both relational databases (PostgreSQL, MySQL) and non-relational databases (MongoDB).
+
+          <br/><br/>
+          Recently, I have delved into exciting artificial intelligence projects, specifically concentrating 
+          on customer segmentation and time series forecasting. I am thrilled about the transformative potential of AI in 
+          the business world.
+
+          <br/><br/>
+          My continuous quest for knowledge has led me to participate in various courses and projects. 
+          Discovering new horizons and applying those learnings to my projects is 
+          what drives my passion for technological 
+          development.
+
+
+
+
+          
+
       </div>
       
       </div>
@@ -83,9 +103,10 @@ const Home = () => {
 </div>
 
 
-
-      
       <br></br>
+   
+   
+   
     </div>
   );
 };

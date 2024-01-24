@@ -6,7 +6,7 @@ import data from '../data/coursesData';
 
 const Courses = () => {
 
-    const results = data;
+    const results = data.sort((a, b) => a.id - b.id); //data
 
     const [searchInput, setSearchInput] = useState("");
     const [display, setDisplay] = useState(results);
@@ -16,7 +16,7 @@ const Courses = () => {
         e.preventDefault();
         setSearchInput(e.target.value); // lo act. mal; 1 paso dsp.
         if (e.target.value.length > 0) {
-            const aux = results.filter(result => result.name.toUpperCase().includes(String(e.target.value).toUpperCase()));
+            const aux = results.filter(result => result.name.toUpperCase().includes(String(e.target.value).toUpperCase())).sort((a, b) => a.id - b.id); ;
             setDisplay(aux);
         }
         else{

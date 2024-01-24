@@ -57,6 +57,10 @@ const Navbar = () => {
               Projects
             </NavLink>
 
+            <NavLink to="/about" className="nav-link">
+                About Me
+            </NavLink>
+
           </div>
         </div>
       </div>
