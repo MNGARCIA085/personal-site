@@ -1,3 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+const react_why = `
+After mastering Angular, I wanted to expand my knowledge by learning React 
+to make a comprehensive comparison between these two frontend frameworks.
+`
+
+const react_learned = `
+Enrolling in the React course enabled me to delve into the React ecosystem and 
+understand its core concepts such as virtual DOM, JSX syntax, component-based architecture, 
+and state management. 
+This experience broadened my perspective 
+on frontend development and equipped me with valuable skills for building modern web applications.
+`
+
+
+
+
+
+const ang_why = `After gaining experience in frontend development with frameworks like Django and Web2py, 
+I aimed to explore a modern frontend framework 
+to streamline my development process and enhance my skill set`
+
+
+const ang_learned = `Enrolling in the Angular course provided me with valuable insights into 
+    contemporary  frontend development practices.
+    I delved into Angular's powerful features such as component-based architecture, two-way data binding, 
+    and robust dependency injection.`
+
+
+
+
+
+const why_solid = `
+I aimed to write high-quality software that is robust, maintainable, and scalable
+`
+
+const solid_learned = `
+The SOLID Principles course offered a transformative journey into software design best practices.
+ These principles provided invaluable guidelines for writing clean, modular, and extensible code. 
+ I particularly appreciated the effective use of analogies in explaining these concepts.
+ This course reaffirmed the importance of adhering to software design principles 
+for delivering robust and sustainable software solutions
+`
+
+
+
+const why_node = `
+Coming from a background of Python development using frameworks like Django and FastAPI, 
+I was curious to explore Node.js and see if I could adapt to a different language ecosystem. 
+Additionally, I sought to broaden my skills and gain insights into the world of GraphQL.
+`
+
+const node_learned = `
+Embracing the Node.js Developer course, I seamlessly transitioned into the Node.js ecosystem, 
+discovering its powerful capabilities for building scalable and efficient server-side applications. 
+Leveraging my existing programming knowledge, I quickly grasped Node.js fundamentals, 
+asynchronous programming, and event-driven architecture. Moreover, the course provided me with a 
+comprehensive introduction to GraphQL, opening new avenues for building flexible and data-driven APIs. 
+`
+
+
+
+
+const why_db = `
+I aimed to deepen my knowledge of database development and gain more practice with the language itself
+`
+
+
+const db_learned = `
+I honed my skills in database design, querying, and optimization, 
+focusing on PostgreSQL-specific features and best practices.
+`
+
+
+
+const full_stack_why = `
+My goal was to immerse myself in full stack development practices and gain expertise in deploying applications using 
+one of the leading cloud providers. 
+`
+
+const full_stack_learned = `
+Participating in the course provided me with a holistic understanding of building end-to-end web applications 
+and deploying them using robust cloud infrastructure.
+Additionally, I gained insights into serverless architecture, learning to leverage serverless functions for 
+efficient and cost-effective application deployment. The course also equipped me with essential skills in 
+Continuous Integration, 
+enabling seamless integration and deployment workflows.
+`
+
+
+
+
+
 const data = [
     {
         'id':103,
@@ -6,9 +111,8 @@ const data = [
         'name':'Angular: de 0 a experto',
         'certificate':'https://www.udemy.com/certificate/UC-d22bbf60-1b18-41d0-b45b-a06c05d96e19/',
         'tuthor':'Fernando Herrera',
-        'razon':'Quería aprender uno de los frameworks de frontend más utilizados',
-        'aprendi':'Crear aplicaciones en angular, pipes, formularios, servicios, rutas protegidas\
-                        deployment, practicarme con la inyección de dependencias.',
+        'razon':ang_why,
+        'aprendi':ang_learned,
         'type':'Course',
         'category':'Software Development',
 
@@ -20,8 +124,8 @@ const data = [
         'name':'Modern react with redux',
         'certificate':'https://www.udemy.com/certificate/UC-6a3c9ac1-bf87-4a38-b116-22386044560e/',
         'tuthor':'Stephen Grider',
-        'razon':'Habiendo aprendido Angular, quería aprender React para poder compararlos',
-        'aprendi':'Cómo funciona react, escribir componentes reutilizables, rutas, hooks, Redux.',
+        'razon':react_why,
+        'aprendi':react_learned,
         'type':'Course',
         'category':'Software Development',
     },
@@ -32,8 +136,8 @@ const data = [
         'name':'SOLID Principles',
         'certificate':'https://www.udemy.com/certificate/UC-b21f0137-fa02-4f4b-b850-f2b45a5c32cc/',
         'tuthor':'Sujith George',
-        'razon':'Mejorar la calidad de mis desarrollos',
-        'aprendi':'Los principios SOLID, de qué se tratan y me ayudó a investigar cuándo y cómo aplicarlos',
+        'razon':why_solid,
+        'aprendi':solid_learned,
         'type':'Course',
         'category':'Software Development',
     },
@@ -58,11 +162,8 @@ const data = [
         'name':'Complete NodeJS Developer',
         'certificate':'https://www.udemy.com/certificate/UC-ab846ff1-6080-465a-a8ae-1658995f37d9/',
         'tuthor':'From 0 to Mastery',
-        'razon':'Aprender Node, uno de los frameworks de frontend más populares y GraphQL.',
-        'aprendi':'Node, GRaphQL, patrones de diseño, como repositoy y observer. \
-                En particular trabajo con MVC hace mucho pero con frameworks de Python.\
-                Cambiar de lenguaje me fue sencillo, lo que me alegró en el sentido de que\
-                aprendí como se debe. ',
+        'razon':why_node,
+        'aprendi':node_learned,
         'type':'Course',
         'category':'Software development',
     },
@@ -74,9 +175,8 @@ const data = [
         'name':'IBM Full Stack Cloud Developer',
         'certificate':'https://coursera.org/share/d0a65d3be23a4e091a7ec8fb33bae951',
         'tuthor':'IBM',
-        'razon':'Aprender a trabajar en desarrollo de software en un proveedor de nube',
-        'aprendi':'Desarrollar aplicaciones y hacer un deploy en la nube, Docker, Kubernetes\
-                    Microservicios y Serverless',
+        'razon':full_stack_why,
+        'aprendi':full_stack_learned,
     },
     {
         'id':7,
@@ -134,9 +234,8 @@ const data = [
         'name':'SQL and PostgreSQL: The complete developers guide',
         'certificate':'https://www.udemy.com/certificate/UC-00f5a066-fb89-4386-8b1b-7205fc464ac2/',
         'tuthor':'Stephen Grider',
-        'razon':'Mejorar mis conocimientos de SQL',
-        'aprendi':'Pude repasar múltiples conceptos de SQL y aprender algunos nuevos, por ejemplo\
-                cómo funcion internamente los índices',
+        'razon':why_db,
+        'aprendi':db_learned,
         'type':'Course',
         'category':'Software Development',
     },
