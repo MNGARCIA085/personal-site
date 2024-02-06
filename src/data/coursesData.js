@@ -101,6 +101,154 @@ enabling seamless integration and deployment workflows.
 
 
 
+const pm_why = `
+Gain a comprehensive understanding of project development processes, delve into agile methodologies, 
+and enhance my soft skills.
+`
+
+const pm_learned = `
+I deepened my understanding of agile methodologies, learning how to prioritize tasks, manage resources, 
+and adapt to changing project requirements efficiently. Moreover, the course emphasized the importance of 
+soft skills such as communication, leadership, and teamwork in driving project success
+`
+
+
+
+const git_why = `
+Recognizing the ubiquitous nature of version control in modern software development, 
+I sought to deepen my understanding of Git to effectively manage code repositories across various projects
+`
+
+
+const git_learned = `
+I learned workflows, branching and merging.
+`
+
+const ibm_ia_why = `
+gain proficiency in artificial intelligence tools and frameworks such as Keras, TensorFlow, 
+and PyTorch from a leading industry player.
+`
+
+
+const ibm_ia_learned = `
+I explored cutting-edge tools and frameworks including Keras, TensorFlow, and PyTorch, and found it to be a 
+valuable introduction to their 
+functionalities and applications in developing intelligent systems.
+The capstone project was particularly enriching, where I implemented the ResNet architecture, 
+further solidifying my understanding of advanced neural network 
+architectures and their practical implementations. 
+`
+
+
+const ds_why = `
+My aim was to delve into the field of data science, which has always intrigued me due to its 
+blend of mathematics, 
+programming, and creative problem-solving
+`
+
+const ds_learned = `
+I explored a wide range of topics, including data visualization, data cleaning, 
+and preprocessing , and took my first steps into the IA world. 
+The course equipped me with essential tools and techniques for analyzing and interpreting data, 
+allowing me to derive meaningful insights and make informed decisions. 
+`
+
+
+
+const gan_why = `
+My objective was to delve into the realm of GANs
+due to their ability to produce remarkable results 
+`
+
+const gan_learned = `
+I gained insights into how GANs function, how they are trained and implemented, 
+and their crucial role in generating diverse and faithful outputs. Exploring topics such 
+as diversity, fidelity, and machine bias underscored the importance of understanding the ethical implications 
+and biases inherent in machine learning models. 
+`
+
+
+
+const deep_learning_why = `
+My objective was to acquire knowledge and skills in the field of deep learning.
+`
+
+const deep_learning_learned = `
+I gained insights into neural networks, 
+their training procedures and hyperparameter tuning techniques. 
+Exploring topics such as convolutional neural networks (CNNs) and language models expanded my understanding 
+of specialized deep learning architectures and their applications. 
+`
+
+
+
+const machine_learning_why = `
+When I enrolled in the course, I already possessed a good understanding of the subject matter. 
+However, my primary motivation was to revisit unsupervised learning concepts and delve deeper 
+into anomaly detection and reinforcement learning.
+`
+
+
+const machine_learning_learned = `
+I had the opportunity to reinforce my knowledge of supervised and unsupervised learning techniques 
+while gaining a deeper understanding of anomaly detection 
+and reinforcement learning methodologies.
+`
+
+
+const nlp_why = `
+My objective was to delve into the field of natural language processing and gain a deeper understanding 
+of attention mechanisms, transformers, and GPT models.
+`
+
+const nlp_learned = `
+Enrolling in the NLP course provided me with comprehensive insights into natural 
+language processing techniques, with a particular focus on attention mechanisms, transformers, 
+and GPT models. I explored how attention mechanisms enable models to focus on specific parts of 
+input sequences, enhancing their ability to understand and generate language. Delving into transformers, 
+I gained a profound understanding of their 
+architecture and their transformative impact on various NLP tasks. 
+`
+
+
+const tf_why = `
+Once I had a good understanding of the foundational concepts, I aimed to specialize further 
+in one of the most important 
+tools in machine learning and deep learning.
+`
+
+const tf_learned = `
+Enrolling in the TensorFlow Developer course allowed me to practice extensively in areas such as 
+CNNs (Convolutional Neural Networks), RNNs (Recurrent Neural Networks), and time series analysis. 
+Through practical exercises, I gained valuable experience 
+in applying TensorFlow to tasks involving 
+image recognition, sequence modeling, and temporal data analysis.
+`
+
+
+const tf_ztm_why = `
+My primary goal was to prepare for the TensorFlow certification exam, but more importantly, 
+I wanted to continue practicing and honing my skills with machine learning projects
+`
+
+const tf_ztm_learned = `
+Through a series of practical exercises and project-based learning, I deepened my understanding 
+of TensorFlow's capabilities and gained practical experience in developing machine learning models. 
+This immersive learning journey not only prepared me for the certification exam but also equipped me with 
+the expertise to tackle complex machine learning challenges 
+and contribute meaningfully to real-world projects.
+`
+
+
+
+const devops_why = `
+I enrolled in the DevOps course to master essential tools such as Docker, Jenkins, Kubernetes, 
+Git, GitFlow, CI, and CD, recognizing the pivotal role they play in modern software development and deployment
+`
+const devops_learned = `
+Besides the different tools themselves, I also learned how they facilitate developments and the importance 
+of DevOps in teamwork, and how they can ease collaboration among different teams.
+`
 
 
 const data = [
@@ -141,6 +289,26 @@ const data = [
         'type':'Course',
         'category':'Software Development',
     },
+
+
+
+
+    {
+        'id':106,
+        'image':'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGV2b3BzfGVufDB8fDB8fHww',
+        'link':'https://www.udemy.com/course/devops-con-dockers-kubernetes-jenkins-y-gitflow-cicd/',
+        'name':'DevOps con Docker, Jenkins, Kubernetes, git, GitFlow CI y CD',
+        'certificate':'https://www.udemy.com/certificate/UC-8ca6324b-a9e2-4142-bce0-2eb1e0233457/',
+        'tuthor':'Adrián Soto Botero',
+        'razon':devops_why,
+        'aprendi':devops_learned,
+        'type':'Course',
+        'category':'Software Development',
+    },
+
+
+
+
     
     {
         'id':51,
@@ -149,9 +317,8 @@ const data = [
         'name':'Google Project Management', 
         'certificate':'https://coursera.org/share/fe9739bebe353b6e0df6d63f5da5a141',
         'tuthor':'Google',
-        'razon':'Tener una visión global del desarrollo de proyectos, mejorar mis conocimientos de \
-                        de metodologías ágiles',
-        'aprendi':'Cómo gestionar eficientemente un proyecto, mejorar mis habilidades blandas ',
+        'razon':pm_why,
+        'aprendi':pm_learned,
         type:'Specialization',
         'category':'Software Development',
     },
@@ -185,8 +352,8 @@ const data = [
         'name':'IBM AI Engineering',
         'certificate':'https://coursera.org/share/f8919915a860021569a6e5db275fcb8b',
         'tuthor':'IBM',
-        'razon':'Aprender las bases de IA',
-        'aprendi':'Distintos modelos de IA, cómo usar Keras, TensorFLow y PyTorch',
+        'razon':ibm_ia_why,
+        'aprendi':ibm_ia_learned,
         'type':'Specialization',
         'category':'Machine Learning',
     },
@@ -197,9 +364,8 @@ const data = [
         'name':'IBM Data Science',
         'certificate':'https://coursera.org/share/d74710e529a045ef2f6ba55c4e05f70d',
         'tuthor':'IBM',
-        'razon':'Aprender sobre data science',
-        'aprendi':'Armar un informe, metodología, análisis y visualización de datos, diferentes\
-                    modelos de machine learning',
+        'razon':ds_why,
+        'aprendi':ds_learned,
         'type':'Specialization',
         'category':'Machine Learning',
     },
@@ -210,10 +376,8 @@ const data = [
         'name':'Deep Learning Specialization',
         'certificate':'https://coursera.org/share/d74710e529a045ef2f6ba55c4e05f70d',
         'tuthor':'Deep Learning AI (Andrew Ng)',
-        'razon':'Aprender Deep Learning',
-        'aprendi':'Qué es el deep learning, qué es una red neuronal, cómo se entrenan\
-        ,cómo se ajustan los hiperpárametros, cuál es la estructura de un proyecto\
-        CNNs y modelos de lenguaje',
+        'razon':deep_learning_why,
+        'aprendi':deep_learning_learned,
     },
     {
         'id':50,
@@ -222,8 +386,8 @@ const data = [
         'name':'Version Control with GIT',
         'certificate':'https://coursera.org/share/d0f8582e9f4cac592e5b46ca73edd1de',
         'tuthor':'Atlassian',
-        'razon':'Aprender más sobre el control de versiones',
-        'aprendi':'Branching and merging, workflows',
+        'razon':git_why,
+        'aprendi':git_learned,
         'type':'Course',
         'category':'Software Development',
     },
@@ -246,12 +410,63 @@ const data = [
         'name':'Generativa Adversarial Networks (GANs)',
         'certificate':'https://www.coursera.org/account/accomplishments/specialization/7H27NYS9RXXD',
         'tuthor':'Deep Learning AI (Sharon Zou)',
-        'razon':'Aprender sobre las redes GAN dado que consiguen resultados fantásticos',
-        'aprendi':'Entender las GAN, cómo funcionan, cómo se entrenan, diversdidad y fidelidad, \
-                    sesgo de máquina y su importancia',
+        'razon':gan_why,
+        'aprendi':gan_learned,
         'type':'Specialization',
         'category':'Machine Learning',
     }
+
+    ,
+    {
+        'id':11,
+        'image':'https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww',
+        'link':'https://www.coursera.org/specializations/machine-learning-introduction',
+        'name':'Machine Learning Specialization',
+        'certificate':'https://www.coursera.org/account/accomplishments/specialization/J6C2EH4H5QDA',
+        'tuthor':'Deep Learning AI (Andrew Ng)',
+        'razon':machine_learning_why,
+        'aprendi':machine_learning_learned,
+    },
+
+    {
+        'id':12,
+        'image':'https://plus.unsplash.com/premium_photo-1682824039145-7156993a9bc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SUF8ZW58MHx8MHx8fDA%3D',
+        'link':'https://www.coursera.org/specializations/natural-language-processing',
+        'name':'Natural Language Processing Specialization',
+        'certificate':'https://www.coursera.org/account/accomplishments/specialization/GYPNCRC822QW',
+        'tuthor':'Deep Learning AI (Andrew Ng)',
+        'razon':nlp_why,
+        'aprendi':nlp_learned,
+    },
+
+
+    {
+        'id':13,
+        'image':'https://www.atriainnovation.com/wp-content/uploads/2021/02/portada.jpg',
+        'link':'https://www.coursera.org/professional-certificates/tensorflow-in-practice',
+        'name':'Tensor Flow Developer Professional Certificate',
+        'certificate':'https://www.coursera.org/account/accomplishments/professional-cert/5NQXJBXSQEMJ',
+        'tuthor':'Deep Learning AI (Laurence Moroney)',
+        'razon': tf_why,
+        'aprendi':tf_learned,
+    },
+
+
+    {
+        'id':14,
+        'image':'https://www.atriainnovation.com/wp-content/uploads/2021/02/portada.jpg',
+        'link':'https://zerotomastery.io/courses/learn-tensorflow/',
+        'name':'Tensor Flow Developer Professional Certificate',
+        'certificate':'https://www.coursera.org/account/accomplishments/professional-cert/5NQXJBXSQEMJ',
+        'tuthor':'ZTM (Daniel Bourke)',
+        'razon': tf_ztm_why,
+        'aprendi':tf_ztm_learned,
+    },
+
+
+
+
+
     
 ]
 
@@ -259,7 +474,9 @@ const data = [
 export default data;
 
 
-// devops, nlp, tf, tf ztm, basic ml
+// devops
+
+
 
 
 
