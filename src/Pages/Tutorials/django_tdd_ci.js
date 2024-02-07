@@ -154,84 +154,79 @@ jobs:
 
 
 
-                <center><h2><b><font color='red'>TDD y CI con Django</font></b></h2></center>
-                <hr></hr>
+            <center><h2><b><font color='red'>TDD and CI with Django</font></b></h2></center>
+            <hr></hr>
 
+            <b><font color='blue'><h3>TABLE OF CONTENTS</h3></font></b><br></br>
 
+            <a href="#inicio">1. What We'll Do</a> <br></br>
 
-                <b><font color='blue'> <h3>TABLA DE CONTENIDO </h3></font></b><br></br>
+            <a href="#objetivos">2. Objectives</a> <br></br>
 
+            <a href="#inicial">3. Initial Project Setup</a> <br></br>
 
-                <a href="#inicio">1. Qué haremos</a> <br></br>
+            <a href="#pytest">4. Setting up Pytest</a> <br></br>
 
-                <a href="#objetivos">2. Objetivos</a> <br></br>
+            <a href="#modelo">5. First Model and URLs</a> <br></br>
 
-                <a href="#inicial">3. Configuración inicial del proyecto</a> <br></br>
+            <a href="#api">6. Developing the REST API</a> <br></br>
 
-                <a href="#pytest">4. Configuración de pytest</a> <br></br>
+            <a href="#repo">7. Creating a Repository on GitHub</a> <br></br>
 
-                <a href="#modelo">5. Primer modelo y URLs</a> <br></br>
+            <a href="#ci">8. Continuous Integration (CI)</a> <br></br>
 
-                <a href="#api">6. Desarrollo de la API REST</a> <br></br>
+            <a href="#ref">9. References</a>
 
-                <a href="#repo">7. Creación de un repositorio en GitHub</a> <br></br>
-
-                <a href="#ci">8. CI</a> <br></br>
-
-                <a href="#ref">9. Referencias</a>
 
                 
 
                 <br></br> <br></br>
 
                
-                <a id="inicio"><b><font color='#086A87'><h4>1. Qué haremos</h4></font></b></a><br></br> 
+                <a id="inicio"><b><font color='#086A87'><h4>1. What We'll Do</h4></font></b></a><br></br> 
 
+                We will build a REST API in Django Rest Framework related to cars. Each car will have a brand and a model (keeping it simple as we want to focus mainly on TDD and the CI pipeline). <br></br>
+                The project's code can be found <a href="https://github.com/MNGARCIA085/Django--TDD--CI" target='_blanck15'>here</a>
 
-                Construiremos una API REST en DRF relacionada con autos.
-                Cada auto tendrá una marca y un modelo (lo mantendremos simple pues queremos enfocarnos más que nada en TDD 
-                y en el pipeline de CI). <br></br>
-                El código del proyecto puede encontrarse <a href="https://github.com/MNGARCIA085/Django--TDD--CI" target='_blanck15'>aquí</a>
-                
                 <br></br> <br></br>
-                
-                <a id="objetivos"><b><font color='#086A87'><h4>2. Objetivos</h4></font></b></a><br></br> 
-                    <ul>
-                        <li>Practicarnos con la creación de api rest</li>
-                        <li>Practicarnos con TDD</li>
-                        <li>Implementar un pipeline de CI</li>
-                    </ul>
 
+                <a id="objetivos"><b><font color='#086A87'><h4>2. Objectives</h4></font></b></a><br></br> 
+                    <ul>
+                        <li>Practice creating REST APIs</li>
+                        <li>Practice TDD</li>
+                        <li>Implement a CI pipeline</li>
+                    </ul>
 
                 <br></br>
 
 
-                <a id="inicial"><b><font color='#086A87'><h4>3. Configuración inicial del proyecto</h4></font></b></a><br></br>
+
+                <a id="inicial"><b><font color='#086A87'><h4>3. Initial Project Setup</h4></font></b></a><br></br>
                 
 
                 
 
-                Creamos el directorio de trabajo y el entorno virtual, el cual activamos <br></br> <br></br>
+                We create the working directory and the virtual environment, which we activate. <br></br> <br></br>
 
                 $ mkdir django-tdd && cd django-tdd <br></br>
                 $ mkdir app && cd app <br></br>
                 $ python3 -m venv env <br></br>
                 $ source env/bin/activate <br></br> <br></br>
 
-                Instalamos las librerías necesarias inicialmente <br></br> <br></br>
+                We install the necessary libraries initially. <br></br> <br></br>
 
                 (env)$ pip install django djangorestframework pytest pytest-django <br></br> <br></br>
 
 
-                creamos el proyecto y la app <br></br> <br></br>
+                We create the project and the app. <br></br> <br></br>
 
                 (env)$ django-admin startproject drf_project . <br></br>
                 (env)$ python manage.py startapp automotive <br></br> <br></br>
 
 
-                Agregamos nuestra nueva app a INSTALLED_APPS (rest_framework y automotive) <br></br> <br></br>
+                We add our new app to INSTALLED_APPS (rest_framework and automotive). <br></br> <br></br>
 
-                
+                                
                 <font color='green'>drf_project/settings.py</font> <br></br> <br></br>
 
 
@@ -242,18 +237,17 @@ jobs:
                 ] <br></br> <br></br>
 
 
-                Creamos un archivo requirements.txt que contendrá las dependencias de nuestro proyecto: <br></br> <br></br>
+                We create a requirements.txt file that will contain the dependencies of our project. <br></br> <br></br>
 
 
                 …..app$ pip freeze -> requirements.txt <br></br> <br></br> <br></br>
 
 
 
-                <a id="pytest"><b><font color='#086A87'><h4>4. Configuración de pytest</h4></font></b></a><br></br>
 
+                <a id="pytest"><b><font color='#086A87'><h4>4. Pytest Configuration</h4></font></b></a><br></br>
 
-
-                Creamos la siguiente estructura de carpetas. <br></br> <br></br>
+                We create the following folder structure. <br></br> <br></br>
 
                 tests <br></br>
                 &emsp; ---- __init__.py <br></br>
@@ -262,13 +256,12 @@ jobs:
 
                 <br></br><br></br>
 
-                Agregamos un archivo pytest.ini al directorio “app” <br></br> <br></br>
+                We add a pytest.ini file to the "app" directory. <br></br> <br></br>
 
                 <font color='green'>pytest.ini</font> <br></br> <br></br>
 
                 [pytest] <br></br>
                 DJANGO_SETTINGS_MODULE = drf_project.settings <br></br>
-
 
                 # -- recommended but optional: <br></br>
                 python_files = tests.py test_*.py *_tests.py <br></br> <br></br> <br></br>
@@ -276,213 +269,178 @@ jobs:
 
 
 
-                <a id="modelo"><b><font color='#086A87'><h4>5. Primer modelo y URLs</h4></font></b></a><br></br>
+                <a id="modelo"><b><font color='#086A87'><h4>5. First Model and URLs</h4></font></b></a><br></br>
 
-
-                Creamos el modelo para los autos <br></br> <br></br>
-
+                We create the model for cars. <br></br> <br></br>
 
                 <font color='green'>automotive/models.py</font> <br></br>
 
                 <CodeBlock codestring={model} language='python'/>
 
-                Realizamos la migración <br></br>
+                We perform the migration. <br></br>
                 ...$python manage.py makemigrations automotive <br></br>
                 ...$python manage.py migrate <br></br> <br></br>
 
+                We create a dummy URL to test. <br></br>
 
-
-                Creamos una URL dummy para testear. <br></br>
-
-
-                Comenzamos por la vista: <br></br><br></br>
+                We start with the view: <br></br><br></br>
 
                 <font color='green'>automotive/views.py</font> <br></br>
 
                 <CodeBlock codestring={dummyview} language='python'/>
 
-                Ahora creamos un archivo urls.py y escribimos lo siguiente: <br></br> <br></br>
+                Now we create a urls.py file and write the following: <br></br> <br></br>
 
                 <font color='green'>automotive/urls.py</font> <br></br>
 
                 <CodeBlock codestring={dummyurl}/>
 
 
-                Finalmente, incluimos las urls de nuestra app en las del proyecto: <br></br> <br></br>
+                Finally, we include the URLs of our app in the project's URLs: <br></br> <br></br>
 
                 <font color='green'>drf_project/urls.py</font> <br></br>
-                
-                
-                
-                <div class="col-md-6"><CodeBlock codestring={urlinicial}/></div>
-                
-                
 
-                Levantamos el servidor y testeamos: <br></br> <br></br>
+
+
+
+                <div class="col-md-6"><CodeBlock codestring={urlinicial}/></div>
+
+                We start the server and test: <br></br> <br></br>
 
                 ….app$ python manage.py runserver <br></br> <br></br>
 
-                Vamos a http://127.0.0.1:8000/automotive/dummy y vemos que todo funcione. <br></br> <br></br> <br></br>
+                We go to http://127.0.0.1:8000/automotive/dummy and make sure everything is working. <br></br> <br></br> <br></br>
 
 
 
                 
 
-                <a id="api"><b><font color='#086A87'><h4>6. Desarrollo de la API REST</h4></font></b></a><br></br>
+                <a id="api"><b><font color='#086A87'><h4>6. Development of the REST API</h4></font></b></a><br></br>
 
-
-
-                Implementaremos los siguientes endpoints: <br></br> <br></br>
-
-
+                We will implement the following endpoints: <br></br> <br></br>
 
                 <table class="table table-bordered w-auto">
                     <thead>
                         <tr>
-                        <th scope="col">Endpoint</th>
-                        <th scope="col">Método HTTP</th>
-                        <th scope="col">Descripción</th>
+                            <th scope="col">Endpoint</th>
+                            <th scope="col">HTTP Method</th>
+                            <th scope="col">Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>automotive/api</td>
                             <td>GET</td>
-                            <td>Obtener todos los autos</td>
+                            <td>Get all cars</td>
                         </tr>
 
                         <tr>
                             <td>automotive/api/:id</td>
                             <td>GET</td>
-                            <td>Obtener el auto con el id dado</td>
+                            <td>Get the car with the given id</td>
                         </tr>
 
                         <tr>
                             <td>automotive/api</td>
                             <td>POST</td>
-                            <td>Crear un nuevo auto</td>
+                            <td>Create a new car</td>
                         </tr>
 
                         <tr>
                             <td>automotive/api/:id</td>
                             <td>PUT</td>
-                            <td>Editar el auto con el id dado</td>
+                            <td>Edit the car with the given id</td>
                         </tr>
 
                         <tr>
                             <td>automotive/api/:id</td>
                             <td>DELETE</td>
-                            <td>Borrar el auto con el id dado</td>
+                            <td>Delete the car with the given id</td>
                         </tr>
-                        
-                        
                     </tbody>
-                    </table>
+                </table>
+
+        <br></br>
+
+        We start by writing a test to add a new car: <br></br> <br></br>
+
+        <font color='green'>tests/automotive/test_views.py</font> <br></br>
+
+        <CodeBlock codestring={testaddcar} language='python'/>
+
+        We execute it: <br></br> <br></br>
+
+        ...app$ pytest <br></br> <br></br>
+
+        It should fail: <br></br> <br></br>
+
+        FAILED tests/automotive/test_views.py::test_add_movie - assert 404 == 201 <br></br> <br></br>
+
+        Now we write the code for the test to pass: <br></br> <br></br>
+
+        <font color='green'>automotive/serializers.py</font> <br></br>
+        <CodeBlock codestring={serializers} language='python'/>
+
+        <font color='green'>automotive/views.py</font> <br></br>
+        <CodeBlock codestring={views} language='python'/>
+
+        <font color='green'>automotive/urls.py</font> <br></br>
+        <CodeBlock codestring={urlsAPI} language='python'/>
+
+        Now the test execution is successful. <br></br> <br></br>
+
+        Then we repeat for the rest of the endpoints (remember that the complete code can be seen in the repo) <br></br><br></br> <br></br>
 
 
 
-                <br></br>
+        <a id="repo"><b><font color='#086A87'><h4>7. Creating a Repository on GitHub</h4></font></b></a><br></br>
 
+            We start by creating a .gitignore file in the root of the project with the following content: <br></br> <br></br>
 
+            <font color='green'>.gitignore</font> <br></br>
+            __pycache__ <br></br>
+            env <br></br>
+            *.sqlite3 <br></br> <br></br>
 
+            We create a new repository on GitHub, named: Django--TDD--CI <br></br> <br></br>
 
-                Comenzamos por escribir un test para agregar un nuevo auto: <br></br> <br></br>
+            In the console, we execute (from the app): <br></br> <br></br>
 
-                <font color='green'>tests/automotive/test_views.py</font> <br></br>
+            git init <br></br>
+            git add .<br></br>
+            git commit -m "first commit" <br></br>
+            git branch -M master <br></br>
+            git remote add origin https://github.com/username/repo-name.git <br></br>
+            git push -u origin master <br></br> <br></br> <br></br>
 
-                <CodeBlock codestring={testaddcar} language='python'/>
+            <a id="ci"><b><font color='#086A87'><h4>8. Continuous Integration (CI)</h4></font></b></a><br></br>
 
+            We will use GitHub Actions. <br></br> <br></br>
 
-                Lo ejecutamos: <br></br> <br></br>
+            We create the .github/workflows folders in the root of the app, and inside them the main.yaml file with the following content: <br></br> <br></br>
 
-                ...app$ pytest <br></br> <br></br>
+            <font color='green'>.github/workflows/main.yaml</font> <br></br>
 
-                Debe fallar: <br></br> <br></br>
+            <CodeBlock codestring={ci} language="yaml"/>
 
-                FAILED tests/automotive/test_views.py::test_add_movie - assert 404 == 201 <br></br> <br></br>
+            We test: <br></br> <br></br>
 
-                Ahora escribimos el código para que el test pase: <br></br> <br></br>
+            git add .  <br></br>
 
-                <font color='green'>automotive/serializers.py</font> <br></br>
-                <CodeBlock codestring={serializers} language='python'/>
+            git commit -m “test CI pipeline” <br></br>
 
-                <font color='green'>automotive/views.py</font> <br></br>
-                <CodeBlock codestring={views} language='python'/>
+            git push <br></br> <br></br>
 
+            In the "Actions" section, we see the pipeline in action: <br></br><br></br>
 
-                <font color='green'>automotive/urls.py</font> <br></br>
-                <CodeBlock codestring={urlsAPI} language='python'/>
+            <img src={require('../../images/CI.png')} alt="CI pipeline" width="80%"/> 
 
-                Ahora la ejecución de los test es exitosa. <br></br> <br></br>
-
-                Luego repetimos para el resto de los endpoints (recuerde que el códio completo puede verse 
-                    en el repo) <br></br><br></br> <br></br>
-
-
-
-
-                  
-
-
-                    <a id="repo"><b><font color='#086A87'><h4>7. Creación de un repositorio en GitHub</h4></font></b></a><br></br>
-
-                    Comenzamos por crear un archivo .gitignore en el root del proyecto con 
-                    el siguiente contenido: <br></br> <br></br>
-
-                    <font color='green'>.gitignore</font> <br></br>
-                    __pycache__ <br></br>
-                        env <br></br>
-                        *.sqlite3 <br></br> <br></br>
-
-
-                        Creamos un nuevo repo en github, le llamamos: Django--TDD--CI <br></br> <br></br>
-
-                        En consola ejecutamos (desde app): <br></br> <br></br>
-
-                        git init <br></br>
-                        git add .<br></br>
-                        git commit -m "first commit" <br></br>
-                        git branch -M master <br></br>
-                        git remote add origin https://github.com/username/nombre del repo.git <br></br>
-                        git push -u origin master <br></br> <br></br> <br></br>
-
-                       
-                        <a id="ci"><b><font color='#086A87'><h4>8. CI</h4></font></b></a><br></br>
-
-
-                        Usaremos GitHub Actions. <br></br> <br></br>
-
-
-                        Creamos las carpetas .github/workflows en el root de la app, 
-                        y dentro de ellas el archivo main.yaml con el siguiente contendio: <br></br> <br></br>
-
-
-
-
-                        <font color='green'>.github/workflows/main.yaml</font> <br></br>
-                        
-                        <CodeBlock codestring={ci} language="yaml"/>
-
-
-
-
-                        Testeamos: <br></br> <br></br>
-
-                        git add .  <br></br>
-
-                        git commit -m “test CI pipeline” <br></br>
-
-                        git push <br></br> <br></br>
-
-                        En la parte de actions vemos el pipeline en acción: <br></br><br></br>
-
-                        <img src={require('../../images/CI.png')} alt="CI pipeline" width="80%"/> 
 
 
 
                         <br></br> <br></br> <br></br>
 
-                        <a id="ref"><b><font color='#086A87'><h4>9. Referencias</h4></font></b></a><br></br>
+                        <a id="ref"><b><font color='#086A87'><h4>9. References</h4></font></b></a><br></br>
 
                         <ul>
                             <li><a href="https://www.djangoproject.com/" target='_blanck20'>Django</a></li>

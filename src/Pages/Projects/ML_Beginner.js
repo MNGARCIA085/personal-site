@@ -8,9 +8,9 @@ const MLBeginner = () => {
             <h5><center>ML Beginner Projects</center></h5>
 
             <hr></hr>
-            Es un grupo de proyectos sencillos que realicé para ir agarrando experiencia con ML.
-            Básicamente el plantearse un objetivo, conseguir los datos, pre-procesarlos, implementar 
-            distintos modelos, ajustar los hiperparámetros y evaluar los resultados obtenidos.
+            These projects are a series of simple exercises I undertook to gain experience in Machine Learning. 
+            Essentially, each project involves setting a goal, gathering data, preprocessing, 
+            implementing various models, tuning hyperparameters, and evaluating the results obtained.
 
             <br></br> <br></br> <br></br>
 

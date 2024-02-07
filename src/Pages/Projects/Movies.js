@@ -8,41 +8,41 @@ const Movies = () => {
 
             <h5><center>Software Project Template: Movies</center></h5>
 
+            
+
             <hr></hr>
-            Es un proyecto de software donde se implementan distintas funcionalidades que suelen estar
-            en muchos proyectos.<br></br>
-            La aplicación consiste en que un usuario puede ver distintas películas y sus críticas y hacer
-            su propia review. Un administrador es quien ingresa las películas.
+            This is a software project where various functionalities commonly found in many projects are implemented.<br></br>
+            The application allows a user to view different movies and their reviews, as well as to write their own review. An administrator is responsible for adding movies.
             <br></br>
-            El backend se implementó con <a href="https://fastapi.tiangolo.com/" target='_blanck101'>Fast API</a> <br></br>
-            El frontend se implementó con <a href="https://es.react.dev/" target='_blanck102'>React</a> <br></br>
+            The backend was implemented using <a href="https://fastapi.tiangolo.com/" target='_blanck101'>Fast API</a>. <br></br>
+            The frontend was implemented using <a href="https://es.react.dev/" target='_blanck102'>React</a>. <br></br>
             <br></br>
 
-            Entre las funcionalidades implementadas destacan:
+            Among the implemented functionalities are:
             <ul>
                 <li>Backend</li>
                 <ul>
-                    <li>Configuración de ORM (SQLAlchemy)</li>
+                    <li>ORM Configuration (SQLAlchemy)</li>
                     <li>JWT</li>
-                    <li>Control de acceso basado en roles</li>
+                    <li>Role-based access control</li>
                     <li>CORS</li>
-                    <li>API REST para ingresar movies, reviews, genres y users</li>
-                    <li>Tests con pytest</li>
+                    <li>CRUD operations</li>
+                    <li>REST API</li>
+                    <li>Tests with pytest</li>
                 </ul>
                 
                 <li>Frontend</li>
                 <ul>
-                    <li>Login con JWT</li>
-                    <li>Rutas protegidas</li>
+                    <li>Login with JWT</li>
+                    <li>Protected routes</li>
                     <li>Datatable</li>
-                    <li>Formularios</li>
+                    <li>Forms</li>
                 </ul>
             </ul>
 
-
-
             <br></br>
-            El proyecto puede verse <a href="https://github.com/MNGARCIA085/Movies" target='_blanck52'>aquí</a>
+            The project can be viewed <a href="https://github.com/MNGARCIA085/Movies" target='_blanck52'>here</a>.
+
         
         
         
