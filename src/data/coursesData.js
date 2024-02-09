@@ -206,7 +206,7 @@ Enrolling in the NLP course provided me with comprehensive insights into natural
 language processing techniques, with a particular focus on attention mechanisms, transformers, 
 and GPT models. I explored how attention mechanisms enable models to focus on specific parts of 
 input sequences, enhancing their ability to understand and generate language. Delving into transformers, 
-I gained a profound understanding of their 
+I gained an understanding of their 
 architecture and their transformative impact on various NLP tasks. 
 `
 
@@ -263,6 +263,7 @@ const data = [
         'aprendi':ang_learned,
         'type':'Course',
         'category':'Software Development',
+        'repo':'https://github.com/MNGARCIA085/ANGULAR-UDEMY'
 
     },
     {
@@ -276,6 +277,7 @@ const data = [
         'aprendi':react_learned,
         'type':'Course',
         'category':'Software Development',
+        'repo':'https://github.com/MNGARCIA085/REACT-UDEMY'
     },
     {
         'id':105,
@@ -319,7 +321,7 @@ const data = [
         'tuthor':'Google',
         'razon':pm_why,
         'aprendi':pm_learned,
-        type:'Specialization',
+        'type':'Specialization',
         'category':'Software Development',
     },
     {
@@ -333,6 +335,7 @@ const data = [
         'aprendi':node_learned,
         'type':'Course',
         'category':'Software development',
+        'repo':'https://github.com/MNGARCIA085/NASA-NODE-UDEMY'
     },
     
     {
@@ -344,6 +347,7 @@ const data = [
         'tuthor':'IBM',
         'razon':full_stack_why,
         'aprendi':full_stack_learned,
+        'repo':'https://github.com/MNGARCIA085/final-cloud-app-with-database'
     },
     {
         'id':7,
@@ -356,6 +360,7 @@ const data = [
         'aprendi':ibm_ia_learned,
         'type':'Specialization',
         'category':'Machine Learning',
+        'repo':'https://github.com/MNGARCIA085/IA-IBM-COURSERA'
     },
     {
         'id':6,
@@ -368,6 +373,7 @@ const data = [
         'aprendi':ds_learned,
         'type':'Specialization',
         'category':'Machine Learning',
+        'repo':'https://github.com/MNGARCIA085/IBM---DATA-SCIENCE'
     },
     {
         'id':1,
@@ -378,6 +384,7 @@ const data = [
         'tuthor':'Deep Learning AI (Andrew Ng)',
         'razon':deep_learning_why,
         'aprendi':deep_learning_learned,
+        'repo':'https://github.com/MNGARCIA085/Deep-Learning-Specialization---Coursera'
     },
     {
         'id':50,
@@ -414,6 +421,7 @@ const data = [
         'aprendi':gan_learned,
         'type':'Specialization',
         'category':'Machine Learning',
+        'repo':'https://github.com/MNGARCIA085/GANs-Specialization---Coursera'
     }
 
     ,
@@ -426,6 +434,7 @@ const data = [
         'tuthor':'Deep Learning AI (Andrew Ng)',
         'razon':machine_learning_why,
         'aprendi':machine_learning_learned,
+        'repo':'https://github.com/MNGARCIA085/Machine-Learning-Specialization---Coursera'
     },
 
     {
@@ -434,9 +443,10 @@ const data = [
         'link':'https://www.coursera.org/specializations/natural-language-processing',
         'name':'Natural Language Processing Specialization',
         'certificate':'https://www.coursera.org/account/accomplishments/specialization/GYPNCRC822QW',
-        'tuthor':'Deep Learning AI (Andrew Ng)',
+        'tuthor':'Deep Learning',
         'razon':nlp_why,
         'aprendi':nlp_learned,
+        'repo':'https://github.com/MNGARCIA085/NLP-Specialization---Coursera'
     },
 
 
@@ -449,6 +459,7 @@ const data = [
         'tuthor':'Deep Learning AI (Laurence Moroney)',
         'razon': tf_why,
         'aprendi':tf_learned,
+        'repo':'https://github.com/MNGARCIA085/TensorFlow-Specialization---Coursera'
     },
 
 
@@ -456,7 +467,7 @@ const data = [
         'id':14,
         'image':'https://www.atriainnovation.com/wp-content/uploads/2021/02/portada.jpg',
         'link':'https://zerotomastery.io/courses/learn-tensorflow/',
-        'name':'Tensor Flow Developer Professional Certificate',
+        'name':'Tensor Flow Developer Professional Certificate - ZTM',
         'certificate':'https://www.coursera.org/account/accomplishments/professional-cert/5NQXJBXSQEMJ',
         'tuthor':'ZTM (Daniel Bourke)',
         'razon': tf_ztm_why,

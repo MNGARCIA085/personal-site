@@ -22,7 +22,18 @@ const CourseDetails = () => {
                 <b>Certificate:</b> <a href={aux[0].certificate} target='_blanck2'>Click here
                       </a><br></br> <br></br>
                 <b>Why did I take it?:</b> {aux[0].razon} <br></br> <br></br>
-                <b>What I learn:</b> {aux[0].aprendi}
+                <b>What I learn:</b> {aux[0].aprendi} <br></br> <br></br>
+
+
+                {aux[0].repo ? <div><b>Repo:</b> <a href={aux[0].repo} target='_blacnk1000'>Click here</a></div> : ''}
+
+
+                
+
+
+                
+                
+
 
             </div>
             <div class="col-md-5 offset-md-0">
