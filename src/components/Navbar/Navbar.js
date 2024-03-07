@@ -61,6 +61,32 @@ const Navbar = () => {
                 About Me
             </NavLink>
 
+
+
+              {/*
+               <NavDropdown title="Projects" id="basic-nav-dropdown">
+                <NavDropdown.Item>
+                  <NavLink to="/projects" className="nav-link">
+                    Learning
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink to="/projects" className="nav-link">
+                    Templates
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink to="/projects" className="nav-link">
+                    Personal Interest
+                  </NavLink>
+                </NavDropdown.Item>
+          </NavDropdown>
+              
+        */}
+              
+
+
+
           </div>
         </div>
       </div>

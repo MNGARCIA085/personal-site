@@ -28,6 +28,10 @@ const CourseDetails = () => {
                 {aux[0].repo ? <div><b>Repo:</b> <a href={aux[0].repo} target='_blacnk1000'>Click here</a></div> : ''}
 
 
+
+                {aux[0].obs ? <div><b>Obs:</b> {aux[0].obs} </div> : ''}
+
+
                 
 
 

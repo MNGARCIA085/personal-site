@@ -7,7 +7,7 @@ const data = [
     },
     {
         'id':2,
-        'name':'Proyectos iniciales en Machine Learning',
+        'name':'Learning AI',
         'description': 'Projects aimed at gaining experience in Machine Learning; these are initiatives whose main goal is to learn ML.',
         'link':'MLBeginner'
     },

@@ -251,6 +251,45 @@ of DevOps in teamwork, and how they can ease collaboration among different teams
 `
 
 
+const tf_std_why = `
+I wanted to deepen my knowledge in TensorFlow.
+`
+const tf_std_learned =  `
+I gained insights into the best practices for utilizing TensorFlow.
+I learned how to effectively manage real-world image datasets and implement strategies to mitigate 
+overfitting issues, employing techniques such as data augmentation and dropout.
+I explored the realm of natural language processing (NLP) systems built using TensorFlow, 
+Additionally, I acquired hands-on experience in training Recurrent Neural Networks (RNNs), 
+Gated Recurrent Units (GRUs), and Long Short-Term Memory (LSTM) networks using text corpora, 
+further deepening my understanding of sequence modeling in NLP tasks
+`
+
+
+const tf_advanced_why = `
+    Having completed the TensorFlow specialization, I wanted to delve even deeper into the framework.
+`
+const tf_advanced_learned = `
+One of my fauvorites.I grasped the core concepts of the Functional API, empowering me to craft intricate non-sequential model structures, 
+bespoke loss functions, and layers.
+I acquired proficiency in optimization methodologies, including the adept use of GradientTape and Autograph, 
+enabling me to optimize training processes across diverse computing environments.
+I honed practical skills in object detection, image segmentation, and the discernment of convolutional operations in visual data analysis.
+I explored the realm of generative deep learning. This exploration encompassed diverse techniques, 
+such as Style Transfer, Auto Encoding, Variational Autoencoders (VAEs), and Generative Adversarial Networks (GANs).
+`
+
+
+
+
+const repos_coursera = `
+Due to Coursera's policies, it's not possible to share repositories with solutions to course problems. 
+However, you can explore similar problems I solved using the 
+knowledge gained from this and other courses in the 'Projects -> Learning AI' section.
+`
+
+
+
+
 const data = [
     {
         'id':103,
@@ -459,7 +498,7 @@ const data = [
         'tuthor':'Deep Learning AI (Laurence Moroney)',
         'razon': tf_why,
         'aprendi':tf_learned,
-        'repo':'https://github.com/MNGARCIA085/TensorFlow-Specialization---Coursera'
+        'repo':repos_coursera,
     },
 
 
@@ -472,6 +511,20 @@ const data = [
         'tuthor':'ZTM (Daniel Bourke)',
         'razon': tf_ztm_why,
         'aprendi':tf_ztm_learned,
+    },
+
+
+    
+    {
+        'id':15,
+        'image':'https://www.atriainnovation.com/wp-content/uploads/2021/02/portada.jpg',
+        'link':'https://www.coursera.org/specializations/tensorflow-advanced-techniques',
+        'name':'TensorFlow: Advanced Techniques Specialization',
+        'certificate':'https://www.coursera.org/account/accomplishments/specialization/certificate/DD9M6HDVEPWH',
+        'tuthor':'Laurence Moroney',
+        'razon': tf_advanced_why,
+        'aprendi':tf_advanced_learned,
+        'obs': repos_coursera
     },
 
 
